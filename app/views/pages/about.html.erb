@@ -1,0 +1,48 @@
+<title>Home - Alfa Blog</title>
+  <meta charset='utf-8'>
+  <style>
+    .container1, .container2, .container3{
+      float: inherit;
+	    display: inline-block;
+	    background-color: lightblue;
+	    color: black;
+	    width: 30%;
+	    border: 1px dashed black;
+	    text-align: left;  
+    }
+    #header{
+      background-image: url(https://unsplash.it/1700/800/?random);
+	    background-size: cover;
+	    color: white;
+	    border-radius: 20px;
+	    box-shadow: 1px 1px 2px 3px, rgb(230,230,230);
+	    font-size: 70;
+	    text-align: center;
+    }
+    footer{
+      font-family: verdana;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div id='header'>
+    <h1>Welcome to the Alfa Blog's about page. Here you'll understand it's features<h1>
+  </div>
+  <div class='container1'>
+		<h2>Feature 1</h2>
+		<p>Details of the feature</p>
+	</div>
+	<div class='container2'>
+		<h2>Feature 2</h2>
+		<p>Details of the feature</p>
+	</div>
+	<div class='container3'>
+		<h2>Feature 3</h2>
+		<p>Details of the feature</p>
+	</div>
+	<h2>To use it, go <%= link_to 'here', root_path %></h2>
+</body>
+<footer>
+  <p>Here you'll see the trademarks and stuff</p>
+</footer>
