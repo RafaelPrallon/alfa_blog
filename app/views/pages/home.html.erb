@@ -1,50 +1,33 @@
 <head>
-  <title>Home - Alfa Blog</title>
-  <meta charset='utf-8'>
   <style>
-    .container1, .container2, .container3{
+    .container1, .container2{
       float: inherit;
 	    display: inline-block;
 	    background-color: lightblue;
 	    color: black;
-	    width: 30%;
-	    border: 1px dashed black;
-	    text-align: left;  
+	    width: 49%;
+	    height: 500px%;
+	    border: 1px solid black;
+	    text-align: left;
+	    margin: 2px;
     }
-    #header{
-      background-image: url(https://unsplash.it/1700/800/?random);
-	    background-size: cover;
-	    color: white;
-	    border-radius: 20px;
-	    box-shadow: 1px 1px 2px 3px, rgb(230,230,230);
-	    font-size: 70;
-	    text-align: center;
+    a:hover{
+    	text-decoration: none;
     }
-    footer{
-      font-family: verdana;
-      font-size: 1em;
-    }
-  </style>
+	</style>
 </head>
 <body>
-  <div id='header'>
-    <h1>Welcome to the Alfa Blog. Here you'll be able to read posts from your friends anywhere in the world<h1>
+  <div class='center jumbotron'>
+    <h1>Welcome to the Alfa Blog. Here you'll be able to read great stories for anyone in the world<h1>
+  	<h2><%= link_to 'Sign up now',"#", class: "btn btn-primary btn-lg btn-xlarge"%></h2>
+	<h2>To see the post, go <%= link_to 'here', articles_path %></h2>
   </div>
   <div class='container1'>
-		<h2>Post</h2>
-		<p>Author</p>
+		<h2>Escreva sobre o que você quiser</h2>
+		<p>Aqui não há restrições sobre os assuntos a serem tratados.*</p>
 	</div>
 	<div class='container2'>
-		<h2>Post</h2>
-		<p>Author</p>
+		<h2>Leia os artigos dos mais variados autores</h2>
+		<p>Aqui todas as vozes são ouvidas e respeitadas</p>
 	</div>
-	<div class='container3'>
-		<h2>Post</h2>
-		<p>Author</p>
-	</div>
-	<h2>To read about it, go <%= link_to 'here', about_path %></h2>
-	<h2>To see the post, go <%= link_to 'here', articles_path %></h2>
 </body>
-<footer>
-  <p>Here you'll see the trademarks and stuff</p>
-</footer>
