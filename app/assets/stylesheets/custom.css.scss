@@ -58,7 +58,7 @@ $navbar-default-bg: #ADD8E6;
 
 .article-title {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .article-body {
@@ -68,6 +68,11 @@ $navbar-default-bg: #ADD8E6;
   
 }
 
+.listing {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.8em;
+}
 footer{
   margin-top: 45px;
   padding-top: 5px;
