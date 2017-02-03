@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
   private
     
     def require_same_user
-      if current_user != @article.user
+      if current_user != @article.user and !current_user.admin?
         flash[:danger] = "Somente o autor desse artigo pode alterá-lo."
         redirect_to root_path
       end
