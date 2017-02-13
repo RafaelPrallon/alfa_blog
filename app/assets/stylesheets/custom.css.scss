@@ -58,7 +58,7 @@ $navbar-default-bg: #ADD8E6;
 
 .article-title {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .article-body {
@@ -73,6 +73,21 @@ $navbar-default-bg: #ADD8E6;
   padding-left: 0;
   font-size: 0.8em;
 }
+
+.badge{
+  background-color: #CEF6F5;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.badge:hover{
+  text-decoration: none;
+}
+
+.input-checkbox input{
+  width: auto !important;
+}
+
 footer{
   margin-top: 45px;
   padding-top: 5px;
